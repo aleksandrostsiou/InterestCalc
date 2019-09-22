@@ -17,7 +17,7 @@ namespace ConsoleApp
             DateTime startDate = DateTime.Now;
             DateTime endDate = startDate;
 
-            //Console Interface
+            //Console UI
             Console.WriteLine("Give the amount ,starting date ,and the ending date \n **in this order**");
             if (float.TryParse(Console.ReadLine(), out float amount))
             {
