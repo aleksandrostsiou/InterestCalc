@@ -32,7 +32,7 @@ namespace ConsoleApp
                         Console.WriteLine("Your results : \n");
 
                         //Input Amount , START date , END date 
-                        calc.CalcInterest(100, startDate.ToString("dd/MM/yyyy"), endDate.ToString("dd/MM/yyyy"));
+                        calc.CalcInterest(amount, startDate.ToString("dd/MM/yyyy"), endDate.ToString("dd/MM/yyyy"));
                     }
                     else
                     {

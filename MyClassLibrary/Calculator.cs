@@ -47,10 +47,10 @@ namespace MyClassLibrary
                     //Total days
                     var days = (endList - startList).TotalDays+1;
                     //Dikaiopratiko amount
-                    Dikaio = (inputAmount * ((DataList[i].Dikaiopraktikos / 100) / (360.0F)) * Convert.ToSingle(days));
+                    Dikaio = (inputAmount * (((DataList[i].Dikaiopraktikos / 100) / (360.0F)) * Convert.ToSingle(days)));
                     sumD += Dikaio;
                     //Iperimerias amount
-                    Iper = inputAmount * ((DataList[i].Iperimerias / 100) / (360.0F)) * Convert.ToSingle(days);
+                    Iper = inputAmount * (((DataList[i].Iperimerias / 100) / (360.0F)) * Convert.ToSingle(days));
                     sumI += Iper;
                     //Formated Data to console
                     Console.Write($" startDate: {startList.ToString("dd/MM/yyyy")} endDate: {endList.ToString("dd/MM/yyyy")} days: {days} Epitokio: {DataList[i].Dikaiopraktikos}% Dikaiopratikos: {Dikaio} Epitokio: {DataList[i].Iperimerias}% Iperimerias: {Iper} \n");
@@ -58,18 +58,18 @@ namespace MyClassLibrary
                 else if ((start>=startList && end>endList)&&endList>=start)
                 {
                     var days = (endList - start).TotalDays + 1;
-                    Dikaio = inputAmount * ((DataList[i].Dikaiopraktikos / 100) / (360.0F)) * Convert.ToSingle(days);
+                    Dikaio = inputAmount * (((DataList[i].Dikaiopraktikos / 100) / (360.0F)) * Convert.ToSingle(days));
                     sumD += Dikaio;
-                    Iper = inputAmount * ((DataList[i].Iperimerias / 100) / (360.0F)) * Convert.ToSingle(days);
+                    Iper = inputAmount * (((DataList[i].Iperimerias / 100) / (360.0F)) * Convert.ToSingle(days));
                     sumI += Iper;
                     Console.Write($" startDate: {start.ToString("dd/MM/yyyy")} endDate: {endList.ToString("dd/MM/yyyy")} days: {days} Epitokio: {DataList[i].Dikaiopraktikos}% Dikaiopratikos: {Dikaio} Epitokio: {DataList[i].Iperimerias}% Iperimerias: {Iper} \n");
                 }
                 else if (start < startList || end <= endList)
                 {
                     var days = (end - startList).TotalDays+1;
-                    Dikaio = inputAmount * ((DataList[i].Dikaiopraktikos / 100) / (360.0F)) * Convert.ToSingle(days);
+                    Dikaio = inputAmount * (((DataList[i].Dikaiopraktikos / 100) / (360.0F)) * Convert.ToSingle(days));
                     sumD += Dikaio;
-                    Iper = inputAmount * ((DataList[i].Iperimerias / 100) / (360.0F)) * Convert.ToSingle(days);
+                    Iper = inputAmount * (((DataList[i].Iperimerias / 100) / (360.0F)) * Convert.ToSingle(days));
                     sumI += Iper;
                     Console.Write($" startDate: {startList.ToString("dd/MM/yyyy")} endDate: {end.ToString("dd/MM/yyyy")} days: {days} Epitokio: {DataList[i].Dikaiopraktikos}% Dikaiopratikos: {Dikaio} Epitokio: {DataList[i].Iperimerias}% Iperimerias: {Iper} \n");
                 }   
